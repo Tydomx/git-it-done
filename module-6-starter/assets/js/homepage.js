@@ -70,7 +70,7 @@ var displayRepos = function(repos, searchTerm) {
         var statusEl = document.createElement("span");
         statusEl.classList = "flex-row align-center";
 
-        // check if current repo ahs issues or not
+        // check if current repo has issues or not
         if (repos[i].open_issues_count > 0) {
             statusEl.innerHTML = "<i class='fas fa-times status-icon icon-danger'></i>" + repos[i].open_issues_count + " issue(s)";
         } else {
